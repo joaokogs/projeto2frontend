@@ -108,6 +108,130 @@ h2{
     margin-right: 40px;
 }
 
+.containerPopUp{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a8a8a8;
+}
+
+.containerPopUpAberto{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a8a8a8;
+}
+
+
+.containerCadastro {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerCadastro button{
+    font-size: 20px;
+    background-color: #3f77d9;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.containerCadastro button:hover{
+    background-color: #1d468f;
+    cursor: pointer;
+}
+  
+.containerCadastro input[type="text"], .containerCadastro textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    outline: none;
+}
+
+.containerCadastro input[type="text"]:focus, .containerCadastro textarea:focus{
+    border-color: #f24141;
+}
+
+.pesquisaContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pesquisaContainer strong{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+  
+.pesquisaContainer input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #303030;
+    outline: none;
+}
+
+.pesquisaContainer input[type="text"]:focus{
+    border-color: #f24141;
+}
+  
+.pesquisaContainer ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.pesquisaContainer li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #bebebe;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.pesquisaContainer li button {
+    background-color: #f24141;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.pesquisaContainer li button:hover{
+    background-color: #bf1d1d;
+}
+
+.pesquisaContainer li strong{
+    font-size: 40px;
+}
+
+.pesquisaContainer li p{
+    font-size: 20px;
+}
+  
+
+
 @media(min-width: 769px) and (max-width: 1140px){
     .container{
         padding-left: 20px;
@@ -168,3 +292,4 @@ h2{
     }
     
 }
+
