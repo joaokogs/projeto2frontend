@@ -1,0 +1,170 @@
+/*João Pedro Koguishi/Pedro Esteves Mendonça da Silva*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+header .line{
+    background-color: #117050;
+    height: 10px;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.barra{
+    background-color: #006341;
+    width: 168px;
+    height: 22px;
+}
+
+h1{
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    line-height: 100px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+h2{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    line-height: 40px;
+    margin:20px 0;
+}
+.botao{
+    display: inline-block;
+    border: 2px solid #454545;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: #454545;
+    text-decoration: none;
+}
+.botao:hover{
+    color: white;
+    background-color: #454545;
+}
+
+.header--area{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.header--esquerda img{
+    width: 64px;
+    height: 64px;
+}
+.header--direita{
+    display: flex;
+    align-items: center;
+}
+.header--pesquisar form{
+    display: flex;
+}
+.header--pesquisar input{
+    font-size: 16px;
+    padding: 7px 10px;
+    border: 1px solid #9999;
+    outline: 0;
+    width: 100%;
+    max-width: 220px;
+}
+.header--pesquisar button{
+    border: 0;
+    background-color: transparent;
+    margin-left: -35px;
+    cursor: pointer;
+}
+.header--pesquisar button img{
+    width: 16px;
+    height: 16px;
+}
+.header--menu{
+    margin-left: 50px;
+    cursor: pointer;
+}
+.header--menu img{
+    height: 24px;
+    width: 24px;
+}
+.banner{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.banner--images{
+    margin-top: 60px;
+}
+.banner--images img{
+    width: 148px;
+    height: 148px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+@media(min-width: 769px) and (max-width: 1140px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+}    
+}
+@media(min-width:426px) and (max-width:768px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .area1{
+        grid-template-columns: 3fr 2fr;
+    }
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
+    .area3{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+@media(max-width:425px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header--pesquisar input{
+        max-width: 80px;
+    }
+    h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .banner--images img{
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        border: 3px solid #117050;
+    }
+    .area1,
+    .area2,
+    .area3,
+    .area4{
+        grid-template-columns: 1fr;
+    }
+    .area1--conteudo,
+    .area2--conteudo,
+    .area3--conteudo,
+    .area4--conteudo{
+        padding: 40px;
+    }
+    .area5{
+        height: 200px;
+    }
+    footer{
+        font-size: 12px;
+        padding: 40px 20px;
+    }
+    
+}

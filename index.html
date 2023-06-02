@@ -1,0 +1,57 @@
+<!-- -- >
+    João Pedro Koguishi/Pedro Esteves Mendonça da Silva
+</!-- --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title>
+    <link rel="stylesheet" href="assents/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="line"></div>
+        <div class="container header--area">
+            <div class="header--esquerda">
+                <a href=""><img src="assents/images/logo.png"></a>
+            </div>
+            <div class="header--direita">
+                <div class="header--pesquisar">
+                    <form>
+                        <input type="text" name="pesquisar" placeholder="Search"/>
+                    </form>
+                </div>
+                <div class="header--menu">
+                    <button onclick="abrePopUp()"><img src="assents/images/menu.png"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <h1>Starbucks®<br/>Happy Hour</h1>
+            <span>We'll meet you in your inbox. Drink deals are on their way</span>
+            <div class="banner--images">
+                <img src="assents/images/c1.jpg">
+                <img src="assents/images/c2.jpg">
+                <img src="assents/images/c3.jpg">
+            </div>
+        </div>
+    </section>
+
+    <div class="pesquisaContainer">
+        <strong>Pesquise produtos</strong>
+        <input type="text" id="inputBuscar" placeholder="Buscar produto" oninput="buscarPostagens()">
+
+        <ul id="listaPostagens"></ul>
+    </div>
+    
+    <script src="./assents/scripts/script.js"></script>
+</body>
+</html>
