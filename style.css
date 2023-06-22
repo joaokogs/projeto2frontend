@@ -1,24 +1,27 @@
 /*João Pedro Koguishi/Pedro Esteves Mendonça da Silva*/
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
-header .line{
+
+header .line {
     background-color: #117050;
     height: 10px;
 }
-.container{
+
+.container {
     max-width: 1140px;
     margin: auto;
 }
-.barra{
+
+.barra {
     background-color: #006341;
     width: 168px;
     height: 22px;
 }
 
-h1{
+h1 {
     font-size: 90px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
@@ -26,15 +29,17 @@ h1{
     margin: 0;
     margin-bottom: 30px;
 }
-h2{
+
+h2 {
     font-size: 35px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     margin: 0;
     line-height: 40px;
-    margin:20px 0;
+    margin: 20px 0;
 }
-.botao{
+
+.botao {
     display: inline-block;
     border: 2px solid #454545;
     padding: 10px 30px;
@@ -42,29 +47,34 @@ h2{
     color: #454545;
     text-decoration: none;
 }
-.botao:hover{
+
+.botao:hover {
     color: white;
     background-color: #454545;
 }
 
-.header--area{
+.header--area {
     display: flex;
     justify-content: space-between;
     height: 100px;
     align-items: center;
 }
-.header--esquerda img{
+
+.header--esquerda img {
     width: 64px;
     height: 64px;
 }
-.header--direita{
+
+.header--direita {
     display: flex;
     align-items: center;
 }
-.header--pesquisar form{
+
+.header--pesquisar form {
     display: flex;
 }
-.header--pesquisar input{
+
+.header--pesquisar input {
     font-size: 16px;
     padding: 7px 10px;
     border: 1px solid #9999;
@@ -72,35 +82,42 @@ h2{
     width: 100%;
     max-width: 220px;
 }
-.header--pesquisar button{
+
+.header--pesquisar button {
     border: 0;
     background-color: transparent;
     margin-left: -35px;
     cursor: pointer;
 }
-.header--pesquisar button img{
+
+.header--pesquisar button img {
     width: 16px;
     height: 16px;
 }
-.header--menu{
+
+.header--menu {
     margin-left: 50px;
     cursor: pointer;
 }
-.header--menu img{
+
+.header--menu img {
     height: 24px;
     width: 24px;
 }
-.banner{
+
+.banner {
     background-image: url(../images/bg.jpg);
     background-position: center;
     background-size: cover;
     padding-top: 90px;
     padding-bottom: 90px;
 }
-.banner--images{
+
+.banner--images {
     margin-top: 60px;
 }
-.banner--images img{
+
+.banner--images img {
     width: 148px;
     height: 148px;
     border: 6px solid #117050;
@@ -108,7 +125,7 @@ h2{
     margin-right: 40px;
 }
 
-.containerPopUp{
+.containerPopUp {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -120,7 +137,7 @@ h2{
     background-color: #a8a8a8;
 }
 
-.containerPopUpAberto{
+.containerPopUpAberto {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -132,164 +149,189 @@ h2{
     background-color: #a8a8a8;
 }
 
+#postForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
 
-.containerCadastro {
+.containerPost {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-.containerCadastro button{
-    font-size: 20px;
-    background-color: #3f77d9;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-}
-
-.containerCadastro button:hover{
-    background-color: #1d468f;
-    cursor: pointer;
-}
-  
-.containerCadastro input[type="text"], .containerCadastro textarea {
+label {
     display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
     width: 100%;
-    margin-bottom: 10px;
     padding: 10px;
-    border-radius: 5px;
     border: 1px solid #ccc;
-    resize: vertical;
-    outline: none;
+    border-radius: 4px;
+    resize: none;
 }
 
-.containerCadastro input[type="text"]:focus, .containerCadastro textarea:focus{
-    border-color: #f24141;
+input[type="file"] {
+    display: none;
 }
 
-.pesquisaContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.pesquisaContainer strong{
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-  
-.pesquisaContainer input[type="text"] {
-    width: 50%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #303030;
-    outline: none;
-}
-
-.pesquisaContainer input[type="text"]:focus{
-    border-color: #f24141;
-}
-  
-.pesquisaContainer ul {
-    list-style: none;
-    padding: 0;
-}
-  
-.pesquisaContainer li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #bebebe;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-  
-.pesquisaContainer li button {
-    background-color: #f24141;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
+.imageUpload {
+    background-color: #f5f5f5;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
     cursor: pointer;
-    font-size: 15px;
 }
 
-.pesquisaContainer li button:hover{
-    background-color: #bf1d1d;
+.imageUpload:hover {
+    background-color: #eee;
 }
 
-.pesquisaContainer li strong{
-    font-size: 40px;
+.imageUpload label {
+    color: #888;
 }
 
-.pesquisaContainer li p{
-    font-size: 20px;
+.imagePreview {
+    margin-top: 10px;
+    text-align: center;
 }
-  
+
+.imagePreview img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post-container {
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.post-container h2 {
+    margin-top: 0;
+}
+
+.post-container p {
+    margin-bottom: 10px;
+}
+
+.post-container img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.edit-button,
+.delete-button {
+    margin-top: 10px;
+}
+
+.edit-button {
+    background-color: #2196f3;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
 
 
-@media(min-width: 769px) and (max-width: 1140px){
-    .container{
-        padding-left: 20px;
-        padding-right: 20px;
-}    
-}
-@media(min-width:426px) and (max-width:768px){
-    .container{
+
+@media(min-width: 769px) and (max-width: 1140px) {
+    .container {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .area1{
+}
+
+@media(min-width:426px) and (max-width:768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1 {
         grid-template-columns: 3fr 2fr;
     }
-    .area2{
+
+    .area2 {
         grid-template-columns: 2fr 3fr;
     }
-    .area3{
+
+    .area3 {
         grid-template-columns: 3fr 2fr;
     }
 }
-@media(max-width:425px){
-    .container{
+
+@media(max-width:425px) {
+    .container {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .header--pesquisar input{
+
+    .header--pesquisar input {
         max-width: 80px;
     }
-    h1{
+
+    h1 {
         font-size: 50px;
         line-height: 50px;
     }
-    .banner--images img{
+
+    .banner--images img {
         width: 70px;
         height: 70px;
         margin-right: 10px;
         border: 3px solid #117050;
     }
+
     .area1,
     .area2,
     .area3,
-    .area4{
+    .area4 {
         grid-template-columns: 1fr;
     }
+
     .area1--conteudo,
     .area2--conteudo,
     .area3--conteudo,
-    .area4--conteudo{
+    .area4--conteudo {
         padding: 40px;
     }
-    .area5{
+
+    .area5 {
         height: 200px;
     }
-    footer{
+
+    footer {
         font-size: 12px;
         padding: 40px 20px;
     }
-    
-}
 
+}

@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 1</title>
-    <link rel="stylesheet" href="assents/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
@@ -19,29 +19,38 @@
         <div class="line"></div>
         <div class="container header--area">
             <div class="header--esquerda">
-                <a href=""><img src="assents/images/logo.png"></a>
+                <a href=""><img src="images/logo.png"></a>
             </div>
             <div class="header--direita">
-                <div class="header--pesquisar">
-                    <form>
-                        <input type="text" name="pesquisar" placeholder="Search"/>
-                    </form>
-                </div>
                 <div class="header--menu">
-                    <button onclick="abrePopUp()"><img src="assents/images/menu.png"></button>
+                    <button onclick="abrePopUp()"><img src="images/menu.png"></button>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="containerPopUp">
-        <h1>Postagens</h1>
+        <div class="containerPost">
+            <h1>Cadastrar Produto</h1>
         
-        <div class="containerCadastro">
-          <input type="text" id="inputTitulo" placeholder="Título">
-          <textarea id="inputConteudo" placeholder="Conteúdo"></textarea>
-          <button id="btnCadastrar" onclick="cadastrarPost()">Postar</button>
-        </div>
+            <form id="postForm">
+              <div>
+                <label for="titleInput">Título:</label>
+                <input type="text" id="titleInput" name="title" required>
+              </div>
+              <div>
+                <label for="textInput">Descrição:</label>
+                <textarea id="textInput" name="text" required></textarea>
+              </div>
+              <div class="imageUpload">
+                <label for="imageInput">Selecione uma imagem:</label>
+                <input type="file" id="imageInput" name="image" accept="image/*" onchange="previewImage(event)" required>
+                <span>Clique para escolher uma imagem</span>
+              </div>
+              <div class="imagePreview" id="imagePreview"></div>
+              <button>Criar Produto</button>
+            </form> 
+          </div>
     </div>
 
     <section class="banner">
@@ -49,20 +58,24 @@
             <h1>Starbucks®<br/>Happy Hour</h1>
             <span>We'll meet you in your inbox. Drink deals are on their way</span>
             <div class="banner--images">
-                <img src="assents/images/c1.jpg">
-                <img src="assents/images/c2.jpg">
-                <img src="assents/images/c3.jpg">
+                <img src="images/c1.jpg">
+                <img src="images/c2.jpg">
+                <img src="images/c3.jpg">
             </div>
         </div>
     </section>
 
-    <div class="pesquisaContainer">
-        <strong>Pesquise produtos</strong>
-        <input type="text" id="inputBuscar" placeholder="Buscar produto" oninput="buscarPostagens()">
-
-        <ul id="listaPostagens"></ul>
-    </div>
+    <div class="containerPost">
+        <div>
+          <h2>Buscar Por Produto</h2>
+          <input type="text" id="searchInput" placeholder="Pesquise">
+          <button id="buscaBtn">Buscar</button>
+        </div>
     
-    <script src="./assents/scripts/script.js"></script>
+        <div id="postList">
+        </div>
+      </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
